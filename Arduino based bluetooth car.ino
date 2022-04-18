@@ -11,9 +11,9 @@ void loop()
 {
 char input;
  
-if(Serial.available())
+if(Serial.available())  //To verify if there is a singal being sent
 {
-  input = Serial.read();
+  input = Serial.read();  //To take the input through the application on device that is connected with the bluetooth module
 }
  
 if(input == 'F')           //move forward(all motors rotate in forward direction)
